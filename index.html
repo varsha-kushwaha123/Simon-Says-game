@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Says Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="game-container">
+        <h1>Simon Says</h1>
+        <p class="subtitle">Watch the pattern. Repeat the sequence!</p>
+
+        <div class="score-board">
+            <div class="score-card">
+                <span class="label">LEVEL</span>
+                <span id="level">0</span>
+            </div>
+            <div class="score-card">
+                <span class="label">BEST SCORE</span>
+                <span id="best-score">0</span>
+            </div>
+        </div>
+
+        <p id="message">Press Start Game to play!</p>
+
+        <div class="game-board">
+            <button class="color-btn green" id="green"
+                aria-label="Green button" disabled></button>
+            <button class="color-btn red" id="red"
+                aria-label="Red button" disabled></button>
+            <button class="color-btn yellow" id="yellow"
+                aria-label="Yellow button" disabled></button>
+            <button class="color-btn blue" id="blue"
+                aria-label="Blue button" disabled></button>
+        </div>
+
+        <button id="start-btn">Start Game</button>
+
+        <p class="instructions">
+            Memorize the color sequence and repeat it in the same order.
+            Each level adds one more color!
+        </p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
